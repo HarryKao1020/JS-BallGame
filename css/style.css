@@ -1,0 +1,56 @@
+html, body {
+    background-color: #141414;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.game {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 5px solid white;
+    background-color: #141414;
+}
+
+.game .board.b1, .game .board.b2 {
+    background-color: white;
+}
+
+.game .ball {
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('https://image.flaticon.com/icons/svg/194/194630.svg');
+}
+
+.game .info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #141414;
+    color: white;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.game .info .infoText {
+    color: white;
+    padding: 10px;
+}
+
+.game .grade {
+    color: white;
+    padding: 10px;
+}
