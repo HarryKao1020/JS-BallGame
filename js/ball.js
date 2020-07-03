@@ -55,7 +55,7 @@ GameObject.prototype.collide = function (otherObject) {
 // ---------------------- ball 繼承 GameObject -------------
 var Ball = function () {
 	// 	事先定義大小跟位置
-	this.size = { width: 30, height: 30 };
+	this.size = { width: 15, height: 15 };
 	this.position = { x: 250, y: 250 };
 
 	// 	呼叫母類別
@@ -88,7 +88,7 @@ Ball.prototype.updateVelocity = function () {
 // 遊戲重新開始。球回到最一開始的位置
 Ball.prototype.initPos = function () {
 	this.position = { x: 250, y: 250 };
-	var speed = 6;
+	var speed = 8;
 	var angle = Math.random() * Math.PI * 2;
 	this.velocity = {
 		x: speed * Math.cos(angle),
@@ -230,7 +230,7 @@ Game.prototype.startGameMain = function () {
 		ball.updateVelocity();
 
 		$(".grade").text(_this.grade);
-	}, 35);
+	}, 30);
 };
 
 // 遊戲結束方法
