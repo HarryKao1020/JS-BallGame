@@ -88,7 +88,7 @@ Ball.prototype.updateVelocity = function () {
 // 遊戲重新開始。球回到最一開始的位置
 Ball.prototype.initPos = function () {
 	this.position = { x: 250, y: 250 };
-	var speed = 5;
+	var speed = 6;
 	var angle = Math.random() * Math.PI * 2;
 	this.velocity = {
 		x: speed * Math.cos(angle),
@@ -230,7 +230,7 @@ Game.prototype.startGameMain = function () {
 		ball.updateVelocity();
 
 		$(".grade").text(_this.grade);
-	}, 50);
+	}, 35);
 };
 
 // 遊戲結束方法
